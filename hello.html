@@ -743,7 +743,12 @@
 	Alone.
 
 </p>
-<button type="button" id = "button" onclick="changeBackgroundColor('blue', 'yellow')">Change BG Color</button>
+<label for="bgcolor">Select a background color:</label>
+<input type="color" id="bgcolor" name="bgcolor" value="#0000FF">
+<script type="text/javascript">
+	console.log(document.getElementById("bgcolor").value);
+</script>
+<button type="button" id = "button" onclick="changeBackgroundColor(document.getElementById('bgcolor').value)">Change BG Color</button>
 <p></p>
 <a href="https://www.brandonsanderson.com/prologue-to-stormlight-5/">link to original aritcle</a>
 </body>
